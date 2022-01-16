@@ -1,0 +1,152 @@
+:root {
+    /* color */
+    --header-color: #191a27;
+    --section-color: #6b6b7b;
+    --footer-color: #40404f;
+    --txt-color: white;
+    --side-key-color: #2f2f30;
+    /*font-size*/
+    --logoIcon: 26px;
+    --logoTitle: 38px;
+    --font-size-small: 12px;
+    --font-size-small-medium: 14px;
+    --font-size-medium: 16px;
+    --font-size-big: 24px;
+}
+
+*{
+    margin: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+.head a {
+    text-decoration: none;
+    color: var(--txt-color);
+}
+
+/* 반응형으로 이미지 지정할 계획 */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--section-color);
+    margin: 0px;
+    height: 100%;
+}
+
+header {
+    background-color: var(--header-color);
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.head {
+    color: var(--txt-color);
+}
+
+.head .fa-cloud {
+    font-size: var(--logoIcon);
+    margin-right: 6px;
+}
+
+.logoName {
+    font-size: var(--logoTitle);
+    margin-right: 20px;
+}
+
+.subtitle .intelligent {
+    font-style: oblique; 
+}
+
+.logoImage {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.logoImage > img {
+    width: 600px;
+    height: 400px;
+}
+
+section .idPw {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .idPw input {
+    width: 200px;
+    margin-bottom: 10px;
+    background-color: var(--section-color);
+    border: none;
+    border-bottom: 0.5px solid white;
+}
+
+section .idPw input[value] {
+    color: var(--txt-color);
+}
+
+.etc {
+    font-size: var(--font-size-small);
+    text-align: center;
+    padding-top: 12px;
+}
+
+.etc .signUp {
+    padding-right: 5px;
+    color: var(--side-key-color);
+}
+
+.etc .findIdPw {
+    padding-left: 5px;
+    color: var(--side-key-color)
+;}
+
+footer{
+    background-color: var(--footer-color);
+    height: 63px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .snsIcon {
+    font-size: var(--font-size-big);
+    padding: 5PX;
+    padding-left: 10px;
+}
+
+footer .snsIcon .fa-instagram {
+    padding-right: 4px;
+    color: var(--header-color);
+}
+
+footer .snsIcon .fa-facebook {
+    padding-right: 4px;
+    color: var(--header-color);
+}
+
+footer .snsIcon .fa-github-square {
+    color: var(--header-color);
+}
+
+footer .info {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size-small-medium);
+    padding: 5px;
+    padding-right: 10px;
+}
+
+footer .info .copyright {
+    padding-bottom: 5px;
+    color: var(--header-color);
+}
+
+footer .info .email {
+    color: var(--header-color);
+}
